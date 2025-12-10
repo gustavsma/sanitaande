@@ -1,10 +1,10 @@
 # ----
 # Site
 
-title: Aperture Template
-url: "https://cosmic-hippopotamus.cloudvent.net"
+title: sanitaande-photography
+domain: sanitaande-photography.com
+url: https://sanitaande-photography
 baseurl:
-google_analytics_key:
 
 # Values for the jekyll-seo-tag gem (https://github.com/jekyll/jekyll-seo-tag)
 logo: /siteicon.png
