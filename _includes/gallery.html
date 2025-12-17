@@ -6,12 +6,13 @@
 {% endcomment %}
 
 {% assign category_path = 'images/' | append: include.category %}
-{% assign temp_images = site.static_files | where_exp: "file", "file.path contains category_path" %}
 {% assign all_images = "" | split: "" %}
-{% for file in temp_images %}
-  {% assign ext = file.extname | downcase %}
-  {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.gif' or ext == '.webp' %}
-    {% assign all_images = all_images | push: file %}
+{% for file in site.static_files %}
+  {% if file.path contains category_path %}
+    {% assign ext = file.extname | downcase %}
+    {% if ext == '.jpg' or ext == '.jpeg' or ext == '.png' or ext == '.gif' or ext == '.webp' %}
+      {% assign all_images = all_images | push: file %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 {% assign all_images = all_images | sort: "path" %}
