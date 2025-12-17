@@ -3,7 +3,7 @@
 # Site settings
 title: sanitaande-photography
 description: "Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders."
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/sanitaande" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 
 # Build settings
