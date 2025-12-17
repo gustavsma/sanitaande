@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} - sanitaande-photography</title>
+  <meta name="description"
+    content="Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders. Join me in unraveling the extraordinary through my lens as I embark on a visual journey like no other.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/dist/assets/favicon.ico" />
+  <!-- Tailwind CSS -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/dist/output.css" />
+  <!-- Start - Fonts (CDN) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;700&display=swap" rel="stylesheet">
+  <!-- End - Fonts -->
+  <!-- Fancybox CSS (Local) -->
+  <link rel="stylesheet" href="{{ site.baseurl }}/dist/css/fancybox.css" />
+  <!-- jQuery (Local) -->
+  <script src="{{ site.baseurl }}/dist/js/jquery.min.js"></script>
+  <!-- Fancybox JS (Local) -->
+  <script src="{{ site.baseurl }}/dist/js/fancybox.umd.js"></script>
+  <!-- Alpine.js (Local) -->
+  <script defer src="{{ site.baseurl }}/dist/js/alpine.min.js"></script>
+</head>
+
+<body
+  class="bg-white h-screen text-black px-5 md:px-20 opacity-0 animate-fade-in transition duration-500">
+
+  <!-- Navbar -->
+  {% include navbar.html %}
+
+  <!-- Content -->
+  {{ content }}
+
+  <!-- Footer -->
+  {% include footer.html %}
+
+  <script src="{{ site.baseurl }}/dist/fade_in.js"></script>
+  <script src="{{ site.baseurl }}/dist/menu.js"></script>
+</body>
+
+</html>

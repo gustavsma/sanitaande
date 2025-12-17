@@ -1,0 +1,32 @@
+{
+  "name": "photography-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "tailwind.config.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify",
+    "watch:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch",
+    "copy:libs": "cp node_modules/alpinejs/dist/cdn.min.js dist/js/alpine.min.js && cp node_modules/@fancyapps/ui/dist/fancybox/fancybox.umd.js dist/js/fancybox.umd.js && cp node_modules/@fancyapps/ui/dist/fancybox/fancybox.css dist/css/fancybox.css && cp node_modules/jquery/dist/jquery.min.js dist/js/jquery.min.js",
+    "build": "npm run build:css && npm run copy:libs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavsma/sanitaande.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/gustavsma/sanitaande/issues"
+  },
+  "homepage": "https://github.com/gustavsma/sanitaande#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^6.1.7",
+    "alpinejs": "^3.15.2",
+    "jquery": "^3.7.1"
+  }
+}

@@ -1,0 +1,31 @@
+# Jekyll configuration for sanitaande-photography
+
+# Site settings
+title: sanitaande-photography
+description: "Hello there, I'm Sophia Williams – an intrepid explorer through the lens, on a relentless quest to capture the world's boundless wonders."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - README.md
+  - .gitignore
+
+# Include these files/folders
+include:
+  - _includes
+  - _layouts
+
+# Default settings
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
