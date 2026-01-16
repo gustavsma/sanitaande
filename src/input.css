@@ -12,10 +12,37 @@
 
   .animate-wave {
     animation-name: wave;
-    animation-duration: 2.5s; 
+    animation-duration: 2.5s;
     animation-iteration-count: infinite;
     transform-origin: 70% 70%;
     display: inline-block;
+  }
+
+  .gallery-image {
+    image-rendering: auto;
+    transform: translateZ(0);
+  }
+
+  .masonry-gallery {
+    columns: 1;
+    column-gap: 0.5rem;
+  }
+
+  @media (min-width: 768px) {
+    .masonry-gallery {
+      columns: 2;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .masonry-gallery {
+      columns: 3;
+    }
+  }
+
+  .masonry-item {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
   }
   @keyframes wave {
     0% { transform: rotate( 0.0deg) }
